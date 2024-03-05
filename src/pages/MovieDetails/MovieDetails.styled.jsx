@@ -50,6 +50,7 @@ export const ProductionsList = styled.ul`
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  align-items: start;
 `;
 
 export const Break = styled.hr`

@@ -4,6 +4,7 @@ import { getMovieDetails } from 'services/api';
 
 import { Loader } from 'components/Loader/Loader';
 import noImage from 'images/no-image.jpg';
+import partnerImage from 'images/TMDB.svg';
 
 import {
   Button,
@@ -105,7 +106,15 @@ const MovieDetails = () => {
           {movieList[0] !== null && movieList.length > 0 && (
             <>
               <Subtitle>Production companies</Subtitle>
-              <ProductionsList>{movieList}</ProductionsList>
+              <ProductionsList>
+                {movieList}
+                <img
+                  width="200"
+                  height="50"
+                  src={partnerImage}
+                  alt="TMDB Service"
+                />
+              </ProductionsList>
             </>
           )}
         </div>
